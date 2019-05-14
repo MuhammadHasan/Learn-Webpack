@@ -6,5 +6,15 @@ module.exports = {
     output:{
         filename: "main.js",
         path: path.resolve(__dirname, "dist")
+    },
+    module:{
+        // css-loader take your css & turn it into javascript.
+        // style-loader which take javascript & inject css to the DOM with <style>
+        rules: [
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"]
+            }
+        ]
     }
 }
