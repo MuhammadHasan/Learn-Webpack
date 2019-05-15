@@ -1,7 +1,12 @@
 $fontColor : #6e6cdb;
 $fontSize: 60px;
+$bgColor: aqua;
 
 @import "~bootstrap/scss/bootstrap";
+
+body{
+    background: $bgColor;
+}
 
 h1{
     color: $fontColor;
